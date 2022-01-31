@@ -19,3 +19,4 @@ $ source script.sh
 ### Indice
 - **/hello-world**. Hola mundo en bash y declaración de variables.
 - **/operators**. Operadores aritméticos, relacionales y de asignación.
+- **/arguments**. Paso de argumentos a un script.
