@@ -17,4 +17,5 @@ $ source script.sh
 ```
 
 ### Indice
-- **/hello-world**. Hola mundo en bash.
+- **/hello-world**. Hola mundo en bash y declaración de variables.
+- **/operators**. Operadores aritméticos, relacionales y de asignación.
