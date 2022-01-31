@@ -20,4 +20,4 @@ $ source script.sh
 - **/hello-world**. Hola mundo en bash y declaración de variables.
 - **/operators**. Operadores aritméticos, relacionales y de asignación.
 - **/arguments**. Paso de argumentos a un script.
-- **/substitution**. Ejecución de comando dentro de un script.
+- **/substitution**. Debugging y ejecución de comando dentro de un script.
