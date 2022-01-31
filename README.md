@@ -21,3 +21,4 @@ $ source script.sh
 - **/operators**. Operadores aritméticos, relacionales y de asignación.
 - **/arguments**. Paso de argumentos a un script.
 - **/substitution**. Debugging y ejecución de comando dentro de un script.
+- **/read-prompt**. Capturar datos del usuario.
