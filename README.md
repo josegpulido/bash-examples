@@ -19,6 +19,7 @@ $ source script.sh
 ### Indice
 - **/hello-world**. Hola mundo en bash y declaración de variables.
 - **/operators**. Operadores aritméticos, relacionales y de asignación.
-- **/arguments**. Paso de argumentos a un script.
+- **/catch-operands**. Paso de operandos a un script.
+- **/catch-arguments**. Paso de argumentos a un script.
 - **/substitution**. Debugging y ejecución de comando dentro de un script.
-- **/read-prompt**. Capturar datos del usuario.
+- **/read-prompt**. Captura de datos por consola.

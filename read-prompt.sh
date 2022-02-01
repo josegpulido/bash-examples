@@ -28,10 +28,12 @@ echo "Hola, mi nombre es $FIRST_NAME $SECOND_NAME"
 # | -p         | Permite colocar una frase antes de la  |
 # |            | requerir un dato.                      |
 # |------------|----------------------------------------|
-# | -s         | Oculta todos los caracteres escritos,  |
-# |            | útil para información sensible.        |
+# | -s         | Oculta todos los caracteres escritos.  |
+# |            | Útil para información sensible.        |
 # |------------|----------------------------------------|
 # | -n [num]   | Indica leer como máximo n caracteres.  |
+# |            | La tecla de borrar (retroceso) se      |
+# |            | tomará como un caracter más.           |
 # |------------|----------------------------------------|
 # | -r         | Toma la tecla de borrar (retroceso)    |
 # |            | como un caracter más, deshabilitando   |
