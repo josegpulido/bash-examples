@@ -23,5 +23,6 @@ $ source script.sh
 - **/read-prompt**. Captura de datos por consola mediante el comando $ read.
 - **/if-else**. Estructura condicional if-else: casos de implementación.
 - **/case**. Estructura condicional case.
+- **/arrays**. Introducción a los arreglos.
 - **/catch-operands**. Paso de operandos a un script.
 - **/catch-arguments**. Paso de argumentos a un script.
