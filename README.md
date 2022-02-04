@@ -21,7 +21,7 @@ $ source script.sh
 - **/operators**. Operadores aritméticos, relacionales y de asignación.
 - **/substitution**. Debugging y ejecución de comando dentro de un script.
 - **/read-prompt**. Captura de datos por consola mediante el comando $ read.
-- **/if-else**. Estructura condicional if-else: casos de implementación.
+- **/if-else**. Estructura condicional if-else. Sintaxis (()) y [.
 - **/case**. Estructura condicional case.
 - **/arrays**. Introducción a los arreglos.
 - **/for-loop**. Ciclo for.

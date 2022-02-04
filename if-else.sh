@@ -57,6 +57,7 @@ read -n 2 -p "Ingresa una edad (0-99): " AGE
 # | -d        | La ruta de un directorio    |
 # |           | existe.                     |
 # .___________|_____________________________.
+# + Más información en $ man [.
 # 
 # Es importante dejar un espacio entre los paréntesis y la condición,
 # además de finalizar la condición con punto y coma (;).
