@@ -24,5 +24,6 @@ $ source script.sh
 - **/if-else**. Estructura condicional if-else: casos de implementación.
 - **/case**. Estructura condicional case.
 - **/arrays**. Introducción a los arreglos.
+- **/for-loop**. Ciclo for.
 - **/catch-operands**. Paso de operandos a un script.
 - **/catch-arguments**. Paso de argumentos a un script.
