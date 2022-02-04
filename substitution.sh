@@ -4,7 +4,9 @@
 # a través de dos formatos de sustitución:
 #   (a). `pwd`
 #   (b). $(pwd)
-# Ambos funcionan de igual manera.
+# Ambos funcionan de igual manera, aunque la segunda opción
+# tiene otros casos de uso como en estructuras condicionales,
+# ya que dicha sintaxis está generando una sub-shell.
 
 CURRENT_DIR=`pwd`
 CURRENT_USER=$(whoami)
