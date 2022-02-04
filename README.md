@@ -25,5 +25,6 @@ $ source script.sh
 - **/case**. Estructura condicional case.
 - **/arrays**. Introducción a los arreglos.
 - **/for-loop**. Ciclo for.
+- **/while-loop**. Ciclo while. Uso de break y continue.
 - **/catch-operands**. Paso de operandos a un script.
 - **/catch-arguments**. Paso de argumentos a un script.
