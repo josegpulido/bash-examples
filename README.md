@@ -22,5 +22,6 @@ $ source script.sh
 - **/substitution**. Debugging y ejecución de comando dentro de un script.
 - **/read-prompt**. Captura de datos por consola mediante el comando $ read.
 - **/if-else**. Estructura condicional if-else: casos de implementación.
+- **/case**. Estructura condicional case.
 - **/catch-operands**. Paso de operandos a un script.
 - **/catch-arguments**. Paso de argumentos a un script.
