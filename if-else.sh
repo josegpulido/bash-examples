@@ -23,7 +23,7 @@ if (( QUOTE >= (5 + 2) )); then # <-- Operación aritmética in-line que da como
     echo "Aprobado :)"
 else
     echo "Reprobado :("
-fi # <-- La sentencia fi es importante para cerrar cualquier estructura condicional
+fi # <-- La sentencia fi es importante para cerrar la estructura
 echo -e "\n..."
 
 # Segundo caso ============================================================
