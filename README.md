@@ -34,3 +34,4 @@ $ source script.sh
     - **exit**. Detiene la ejecución del script.
 - **/fd-generator**. Ejercicio de script que crea archivos o directorios. Implementación de:
     - **Here Document**. Sintaxis de un Here Document (heredoc) para escribir en un archivo dentro de un script.
+- **/file-reader**. Script para leer archivos.
