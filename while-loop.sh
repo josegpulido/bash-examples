@@ -10,7 +10,7 @@
 INDEX=0
 
 echo "Iterando mediante bucle while 10 veces:"
-while [ $INDEX -le 10 ]
+while [ $INDEX -le 10 ];
 do
     INDEX=$((INDEX + 1))
     # Al igual que en otros lenguajes de programación, existe las
