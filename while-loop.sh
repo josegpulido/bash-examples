@@ -32,3 +32,18 @@ do
         break;
     fi
 done
+
+echo -e "\n..."
+
+# Es posible ejecutar un bucle while infinito de la sig. manera:
+echo "Iterando sobre while infinito."
+INDEX_2=0
+while :
+do
+    INDEX_2=$((INDEX_2 + 1))
+    echo "i => $INDEX_2"
+    if [ $INDEX_2 -eq 15 ]; then
+        echo "Bucle terminado para evitar recursión infinita."
+        break;
+    fi
+done
