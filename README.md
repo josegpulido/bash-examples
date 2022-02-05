@@ -26,8 +26,11 @@ $ source script.sh
 - **/arrays**. Introducción a los arreglos.
 - **/for-loop**. Ciclo for.
 - **/while-loop**. Ciclo while. Uso de break y continue.
-- **/catch-operands**. Paso de operandos a un script.
+- **/catch-operands**. Paso de operandos a un script. Implementación de:
+    - **shift**. Recorre el conjunto de operandos una posición a la izquierda.
 - **/catch-arguments**. Paso de argumentos a un script.
-- **/options-menu**. Menú de opciones. Implementación de:
+- **/options-menu**. Ejercicio con menú de opciones. Implementación de:
     - **sleep**. Pausa la ejecución del script por n segundos.
     - **exit**. Detiene la ejecución del script.
+- **/fd-generator**. Ejercicio de script que crea archivos o directorios. Implementación de:
+    - **Here Document**. Sintaxis de un Here Document (heredoc) para escribir en un archivo dentro de un script.
