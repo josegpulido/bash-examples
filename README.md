@@ -28,3 +28,6 @@ $ source script.sh
 - **/while-loop**. Ciclo while. Uso de break y continue.
 - **/catch-operands**. Paso de operandos a un script.
 - **/catch-arguments**. Paso de argumentos a un script.
+- **/options-menu**. Menú de opciones. Implementación de:
+    - **sleep**. Pausa la ejecución del script por n segundos.
+    - **exit**. Detiene la ejecución del script.
