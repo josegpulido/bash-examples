@@ -10,6 +10,18 @@
 # | $1 al ${n}     | El número del operando. Si son más   |
 # |                | de un dígito, se utilizan llaves.    |
 # |----------------|--------------------------------------|
+# | $_             | El último operando pasado al último  |
+# |                | comando ejecutado en la shell.       |
+# |----------------|--------------------------------------|
+# | $-             | La lista de argumentos posibles de   |
+# |                | shell actual.                        |
+# |----------------|--------------------------------------|
+# | $$             | Es el PID de la shell. Comprobable   |
+# |                | ejecutando $ ps.                     |
+# |----------------|--------------------------------------|
+# | $!             | El PID del último comando ejecutado  |
+# |                | en background (segundo plano).       |
+# |----------------|--------------------------------------|
 # | $#             | Contador de operandos.               |
 # |----------------|--------------------------------------|
 # | $*             | Refiere a todos los operandos juntos |
