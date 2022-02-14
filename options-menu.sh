@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Ejemplo de script con menú de opciones
-WELCOME_MESSAGE=$(cowsay "Welcome!")
+WELCOME_MESSAGE=$(cowsay "Welcome!") # <-- Más ASCII Art en https://www.asciiart.eu/
 OPTION=0
 
 echo "$WELCOME_MESSAGE"
