@@ -1,7 +1,12 @@
 #!/bin/bash
 
 # Ejemplo de script con menú de opciones
-WELCOME_MESSAGE=$(cowsay "Welcome!") # <-- Más ASCII Art en https://www.asciiart.eu/
+# 
+# Arte ASCII prediseñada:
+# + https://www.asciiart.eu/
+# 
+# Convertir cualquier imagen en arte ASCII:
+WELCOME_MESSAGE=$(cowsay "Welcome!")
 OPTION=0
 
 echo "$WELCOME_MESSAGE"
