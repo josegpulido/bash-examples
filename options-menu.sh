@@ -6,6 +6,7 @@
 # + https://www.asciiart.eu/
 # 
 # Convertir cualquier imagen en arte ASCII:
+# + https://manytools.org/hacker-tools/convert-images-to-ascii-art/
 WELCOME_MESSAGE=$(cowsay "Welcome!")
 OPTION=0
 
