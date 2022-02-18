@@ -38,3 +38,4 @@ $ source script.sh
     - Sintaxis de un Here Document (heredoc) para escribir en un archivo dentro de un script.
 - **/encrypt-files**. Script para empaquetar un conjunto de archivos, comprimirlos y encriptar el archivo resultante con una clave.
 - **/functions**. Funciones.
+- **/star-wars-iv**. Reproduce la pelicula de Star Wars Episodio IV A New Hope en terminal.
