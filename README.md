@@ -39,3 +39,7 @@ $ source script.sh
 - **/encrypt-files**. Script para empaquetar un conjunto de archivos, comprimirlos y encriptar el archivo resultante con una clave.
 - **/functions**. Funciones.
 - **/star-wars-iv**. Reproduce la pelicula de Star Wars Episodio IV A New Hope en terminal.
+- **/port-forwarding**. Script que abre los puertos de cualquier Internet Gateway Device mediante el cliente miniupnpc.
+    - Recorte de nombre de script con $ basename.
+    - Obtener IPv4 de la máquina anfitriona.
+    - Compatibilidad con ejecución por crontab.
