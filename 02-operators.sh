@@ -17,6 +17,7 @@ echo "Resta: $((NUM_A - NUM_B))"
 echo "Multiplicación: $((NUM_A * NUM_B))"
 echo "División: $((NUM_A / NUM_B))"
 echo "Residuo: $((NUM_A % NUM_B))"
+echo "Potencia ^2: $((NUM_A ** 2))" # <-- Potencia al cuadrado
 
 
 echo "" # <-- Salto de línea
