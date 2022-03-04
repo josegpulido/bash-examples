@@ -22,6 +22,7 @@ $ source script.sh
     - Inmutabilidad de variables (declare).
 - **/02-operators**. Operadores aritméticos, relacionales y de asignación.
 - **/03-substitution**. Debugging y ejecución de comando dentro de un script.
+    - Comando $ bash.
 - **/04-read-prompt**. Captura de datos por consola mediante el comando $ read.
 - **/05-if-else**. Estructura condicional if-else. Sintaxis (()) y [.
 - **/06-case**. Estructura condicional case.
@@ -29,6 +30,7 @@ $ source script.sh
 - **/08-for-loop**. Ciclo for.
 - **/09-while-loop**. Ciclo while. Uso de break y continue.
 - **/10-catch-operands**. Paso de operandos a un script.
+    - Identificadores exclusivos de shell ($0, $_, $!, $@, etc).
     - Recorrido del conjunto de operandos una posición hacia la izquierda (shift).
 - **/11-catch-arguments**. Paso de argumentos a un script.
 - **/12-options-menu**. Práctica con menú de opciones.
@@ -40,6 +42,7 @@ $ source script.sh
 - **/14-file-reader**. Lectura y contención de un archivo de texto desde un script.
 - **/15-encrypt-files**. Script para empaquetar un conjunto de archivos, comprimirlos y encriptar el archivo resultante con una clave.
 - **/16-functions**. Funciones.
+    - Ámbito de variables; globales y locales.
 - **/17-star-wars-iv**. Reproduce la pelicula de Star Wars Episodio IV A New Hope en terminal.
 - **/18-port-forwarding**. Script que abre los puertos de cualquier Internet Gateway Device mediante el cliente miniupnpc.
     - Recorte de nombre de script con $ basename.
