@@ -12,9 +12,16 @@
 QUOTE=0
 read -n 1 -p "Ingresa una calificación (0-9): " QUOTE
 
-# Este tipo de sintaxis "(())" es en realidad un sub-shell y se utiliza
-# cuando los valores a comparar son exclusivamente  numéricos, o cuando
-# la comparación implica operaciones aritméticas in-line.
+# Este tipo de sintaxis "$(())" no es la misma que "$()".
+# 
+# La primera se utiliza cuando los valores a comparar son exclusivamente numéricos,
+# o cuando la comparación implica operaciones aritméticas in-line.
+# 
+# La segunda se conoce como sub-shell y tiene la capacidad de actuar como
+# una shell independiente.
+# 
+# Es habitual también combinar ambas:
+# USUARIO="user_$((9 + 31))_$(whoami)" # <-- Retorna el texto "user_40_nombreusuario"
 # 
 # Es importante dejar un espacio entre los paréntesis y la condición,
 # además de finalizar la condición con punto y coma (;).
@@ -57,7 +64,7 @@ read -n 2 -p "Ingresa una edad (0-99): " AGE
 # | -d        | La ruta de un directorio    |
 # |           | existe.                     |
 # .___________|_____________________________.
-# + Más información en $ man [.
+# + Más información en $ man [ o en apuntes de Linux : Bash scripting.
 # 
 # Es importante dejar un espacio entre los paréntesis y la condición,
 # además de finalizar la condición con punto y coma (;).
@@ -95,9 +102,32 @@ fi
 # Tercer caso ============================================================
 
 # Este tipo de sintaxis "[[]]" es una versión mejorada de la utilidad [
-# y que fue concebida por la shell Korn (ksh). Contiene funcionalidades
-# extra de entre las cuales la más destacable son las expresiones regulares,
-# o RegExp. Esta sintaxis es una keyword del sistema, en lugar de un
-# comando como su predecesor $ [.
+# y que fue concebida por la shell Korn (ksh). Contiene todas las funcionalidades
+# del comando test original, además de funcionalidades extra de entre las
+# cuales la más destacable son las expresiones regulares, o RegExp.
 # 
-# Este caso se expondrá en ejercicios prácticos posteriores.
+# Esta sintaxis es una keyword del sistema, en lugar de un binario ejecutable
+# como su predecesor $ [.
+
+echo -e "\n..."
+
+MY_NUMBER=3x
+# La siguiente expresión regular evalua si la cadena de texto a evaluar está
+# conformada solamente por números.
+if [[ $MY_NUMBER =~ ^-?[0-9]+$ ]]; then
+    echo "La variable MY_NUMBER tiene un valor numérico correcto."
+else
+    echo "La variable MY_NUMBER no tiene un valor numérico."
+fi
+
+# Además, esta versión soporta una sintaxis de operadores lógicos más
+# convencional:
+# .-------------------------------------------------.
+# | Operador  | Versión en "[" | Tipo de operación  |
+# |-----------|----------------|--------------------|
+# | &&        | -a             | AND                |
+# |-----------|----------------|--------------------|
+# | ||        | -o             | OR                 |
+# |-----------|----------------|--------------------|
+# | !         | !              | NOT                |
+# .___________|________________|____________________.

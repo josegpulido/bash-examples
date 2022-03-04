@@ -22,9 +22,12 @@ $ source script.sh
     - Inmutabilidad de variables (declare).
 - **/02-operators**. Operadores aritméticos, relacionales y de asignación.
 - **/03-substitution**. Debugging y ejecución de comando dentro de un script.
-    - Comando $ bash.
+    - Formas de realizar debugging (bash, set).
 - **/04-read-prompt**. Captura de datos por consola mediante el comando $ read.
-- **/05-if-else**. Estructura condicional if-else. Sintaxis (()) y [.
+- **/05-if-else**. Estructura condicional if-else.
+    - Sintaxis de comando numérico compuesto "$(())" vs sub-shell "$()".
+    - Comando test "[" y variante "[[".
+    - Operadores lógicos AND, OR y NOT.
 - **/06-case**. Estructura condicional case.
 - **/07-arrays**. Introducción a los arreglos.
 - **/08-for-loop**. Ciclo for.

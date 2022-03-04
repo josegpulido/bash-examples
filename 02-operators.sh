@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Es necesario emplear la sintaxis $(()) y prescindir del signo
-# de pesos ($) para concatenar el resultado de las operaciones en
-# una cadena de texto.
+# La siguiente sintaxis "$(())" se irá explicando brevemente en
+# ejercicios posteriores, especialmente en la sección if-else.
 NUM_A=10
 NUM_B=4
 echo "Número A: $NUM_A"

@@ -28,3 +28,17 @@ echo "Usuario @$CURRENT_USER en el directorio $CURRENT_DIR"
 # de debugging:
 #   (a) $ bash -v ./substitution.sh
 #   (b) $ bash -x ./substitution.sh
+# 
+# O puede especificarse directamente en el shebang:
+#   (a) #!/bin/bash -v
+#   (b) #!/bin/bash -x
+# 
+# Adicionalmente, mediante el comando $ set (ver apuntes de Linux para
+# complementar) es posible debuggear solo áreas específicas del código:
+set -x
+QUERY1=$(apt search "node$")
+set +x
+QUERY2=$(apt search "python$")
+# Al ejecutar el segmento anterior de código puede observarse como ninguna
+# de las variables definidas se muestra directamente en pantalla, pero la
+# sección acotada por $ set +/-x arrojará logs de debugging extras.
