@@ -23,5 +23,15 @@ echo "Hola, mundo"
 export NOMBRE="Jose Guillermo"
 ESTATURA=1.76
 
+# Para crear una constante, es decir, una variable cuyo valor no pueda ser
+# modificado, el comando built-in de la shell llamado declare con el
+# argumento -r (read-only) especificará este comportamiento:
+declare -r EDAD=22
+
+# No importa si se intenta modificar su valor, este permanecerá igual, bash
+# informará el error en tiempo de ejecución:
+EDAD=7
+
 echo "Soy $NOMBRE y mido $ESTATURA"
 echo "La variable NOMBRE está siendo exportada"
+echo "Tengo $EDAD años"

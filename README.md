@@ -1,6 +1,6 @@
 # Prácticas en bash scripting
 
-Ordenadas de menor a mayor dificultad.
+Ordenadas de menor a mayor dificultad o en su defecto, por orden en que las aprendí.
 
 Un script de bash se puede ejecutar de las siguientes maneras:
 ```console
@@ -19,6 +19,7 @@ $ source script.sh
 ### Indice
 - **/01-hello-world**. Hola mundo en bash y declaración de variables. Además:
     - Exportación de variables (export).
+    - Inmutabilidad de variables (declare).
 - **/02-operators**. Operadores aritméticos, relacionales y de asignación.
 - **/03-substitution**. Debugging y ejecución de comando dentro de un script.
 - **/04-read-prompt**. Captura de datos por consola mediante el comando $ read.
@@ -35,7 +36,7 @@ $ source script.sh
     - Pausa la ejecución del script por n segundos (sleep).
     - Detiene la ejecución del script (exit).
 - **/13-fd-generator**. Práctica de script que crea archivos o directorios.
-    - Sintaxis de un Here Document (heredoc) para escribir en un archivo dentro de un script.
+    - Sintaxis de un Here Document (heredoc) para escribir escribir en formato multilínea.
 - **/14-file-reader**. Lectura y contención de un archivo de texto desde un script.
 - **/15-encrypt-files**. Script para empaquetar un conjunto de archivos, comprimirlos y encriptar el archivo resultante con una clave.
 - **/16-functions**. Funciones.
@@ -44,3 +45,6 @@ $ source script.sh
     - Recorte de nombre de script con $ basename.
     - Obtener IPv4 de la máquina anfitriona.
     - Compatibilidad con ejecución por crontab.
+- **/19-dynamic-dns**. Script que mantiene un servicio de DNS dinámico con ipinfo y GoDaddy.
+    - Resolución de la IPv4 pública del Gateway del ISP conectado.
+    - Interacción con API endpoint de GoDaddy para la resolución de registros A de un dominnio.
