@@ -42,3 +42,8 @@ QUERY2=$(apt search "python$")
 # Al ejecutar el segmento anterior de código puede observarse como ninguna
 # de las variables definidas se muestra directamente en pantalla, pero la
 # sección acotada por $ set +/-x arrojará logs de debugging extras.
+
+# Como nota adicional, es común complementar el modo debugging mostrando en
+# pantalla el valor de variables en momentos específicos del script.
+DUMMY_VALUE=5
+echo "DUMMY_VALUE=$DUMMY_VALUE" # <-- Simplemente se imprime el nombre de la variable mostrando también su valor en este momento del script
