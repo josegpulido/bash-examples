@@ -47,10 +47,15 @@ $ source script.sh
 - **/16-functions**. Funciones.
     - Ámbito de variables; globales y locales.
 - **/17-star-wars-iv**. Reproduce la pelicula de Star Wars Episodio IV A New Hope en terminal.
-- **/18-port-forwarding**. Script que abre los puertos de cualquier Internet Gateway Device mediante el cliente miniupnpc.
+- **/18-crontab**. Automatización de un script mediante crontab.
+    - Redefinición del entorno $PATH debido a los tipos de shell (Non-Login-Shell vs Login-Shell) según el tipo de crontab configurado.
+    - Interrupción de script por modificación de comportamiento de shell (set -e).
+    - Inmutabilidad de variables (readonly).
+- **/19-port-forwarding**. Script que abre los puertos de cualquier Internet Gateway Device mediante el cliente miniupnpc.
     - Recorte de nombre de script con $ basename.
     - Obtener IPv4 de la máquina anfitriona.
     - Compatibilidad con ejecución por crontab.
-- **/19-dynamic-dns**. Script que mantiene un servicio de DNS dinámico con ipinfo y GoDaddy.
+- **/20-dynamic-dns**. Script que mantiene un crontab de DNS dinámico con ipinfo y GoDaddy.
     - Resolución de la IPv4 pública del Gateway del ISP conectado.
     - Interacción con API endpoint de GoDaddy para la resolución de registros A de un dominnio.
+    - Compatibilidad con ejecución por crontab.
