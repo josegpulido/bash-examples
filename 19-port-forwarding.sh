@@ -7,11 +7,12 @@
 # 
 # Adicionalmente, está escrito para adjuntarse a una rutina de
 # crontab para que se ejecute recurrentemente como un proceso
-# en background del sistema.
+# en background del sistema, y así prevenir reset en el gateway,
+# cambio de módem, etc.
 
 # bugfix: Proporcionando al usuario de crontab, el cual ejecutará el
-# script, la variable de entorno $PATH ya que para dicho usuario
-# la variable $PATH no existirá.
+# script, la variable de entorno $PATH no existirá porque esta es propia
+# del usuario y se lee con sesiones Login Shell.
 # 
 # El comando $ basename extraerá únicamente el nombre del script desde
 # el símbolo de bash $0, el cual incluye la ruta "./" al inicio del nombre.
@@ -28,7 +29,7 @@ fi
 # Obteniendo la IPv4 de la máquina anfitriona. En entornos como WSL2, siendo
 # WSL1 una excepción, se tiene un adaptador de red virtualizado que tiene
 # su propia dirección IP, es decir, una dirección distinta a la de la máquina
-# física, por lo que la siguiente línea daría un valor engañoso.
+# física, por lo que la siguiente línea daría un valor poco fiable.
 # 
 # Más información:
 # + https://docs.microsoft.com/en-us/windows/wsl/networking
@@ -40,8 +41,7 @@ upnpc -e 'Puerto HTTP' -a $LOCAL_IPV4 80 9000 TCP
 upnpc -e 'Puerto HTTPS' -a $LOCAL_IPV4 443 9001 TCP
 upnpc -e 'Puerto SSH' -a $LOCAL_IPV4 22 9002 TCP
 
-# Por último, para programar el crontab, una configuración útil sería
-# la siguiente:
+# Por último, para programar el crontab, la configuración es la siguiente:
 # 
 # */20 * * * * /path/to/port-forwarding.sh
 # 
