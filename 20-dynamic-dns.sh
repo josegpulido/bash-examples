@@ -4,6 +4,17 @@
 # ISP al que la máquina anfitriona está conectado. Luego, actualizará
 # en GoDaddy el registro A deseado con la nueva IPv4 del ISP en caso de aplicar,
 # sin importar si el gateway del ISP ha cambiado o no de IPv4.
+#
+# Nota:
+# Es importante que el gateway del ISP no tenga una IPv4 NATeada, es decir, que la
+# IPv4 pueda ser enrutada desde internet (IP homologada). Algunos ISP de servicios
+# domésticos, como izzi en México, no ofrecen esta opción desde Octubre de 2022, por
+# lo que características como port-forwarding o DDNS simplemente no funcionarán; ni
+# siquiera en servicios para negocios donde probablemente se requiera de un servidor
+# con IP fija.
+#
+# Proveedores como Telmex continuan dando soporte a esta caracterítica incluso en
+# servicios domésticos.
 
 # Variables de script
 DOMAIN_NAME="pssatech.com"
