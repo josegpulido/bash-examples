@@ -10,6 +10,15 @@
 # | $1 al ${n}     | El número del operando. Si son más   |
 # |                | de un dígito, se utilizan llaves.    |
 # |----------------|--------------------------------------|
+# | $?             | Contiene el file descriptor del      |
+# |                | último comando ejecutado. Útil para  |
+# |                | comprobar si un comando se ha        |
+# |                | ejecutado correctamente evaluando su |
+# |                | file descriptor mediante un if [].   |
+# |----------------|--------------------------------------|
+# | $_             | El último operando pasado al último  |
+# |                | comando ejecutado en la shell.       |
+# |----------------|--------------------------------------|
 # | $_             | El último operando pasado al último  |
 # |                | comando ejecutado en la shell.       |
 # |----------------|--------------------------------------|
